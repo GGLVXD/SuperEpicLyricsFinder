@@ -3,16 +3,15 @@
 .content{
     background-color:#1D1616;
     height:750px;
+    height: fit-content;
+    border-top: auto    ;
 }
-.content-text{ /* Pagaidu teksts, lai saprastu kur ir content tag*/
-    color: aliceblue;
-}
-
 .search-bar { /*search bar*/
     display: flex;
     max-width: 500px;
     margin: auto auto;
     align-content: center;
+    margin-top: 10px;
     
 }
 
@@ -31,3 +30,15 @@
     border: none;
     padding: 10px 20px;
 }
+.lyrics-text{
+    color: white;
+    border:3px solid white;
+    display: flex;
+align-content: center;
+max-width: 500px;
+margin: auto auto;
+margin-top: 20px;
+background-color: #1D1616;
+height: fit-content;
+}
+
