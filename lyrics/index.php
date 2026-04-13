@@ -1,8 +1,9 @@
 <?php
-$url.= $_SERVER['REQUEST_URI'];
-$ok=parse_url($url, PHP_URL_PATH);
+$path = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
+$segments = explode('/', trim($path, '/'));
+$id = $segments[1] ?? '';
 
-echo $ok;
+echo $id;
 ?>
 
 <!DOCTYPE html>
@@ -96,5 +97,7 @@ Mmm, dandelion</br>
 
 
 </body>
-<script src="js/lyrics.js"></script>
+<script src="/js/lyrics.js">
+    getLyrics();
+</script>
 </html>
