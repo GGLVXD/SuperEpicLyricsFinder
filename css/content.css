@@ -107,6 +107,16 @@ justify-self: center;
   width: 750px;
 justify-self: center;
 color: white;
+  position: relative;
+  min-height: 340px;
+
+}
+
+#lyrics {
+  margin: 0 auto;
+  max-width: 680px;
+  text-align: center;
+  line-height: 1.6;
 
 }
 .Artist{
@@ -155,4 +165,43 @@ color: white;
         animation: none;
 }
   
+  
+
+
+  .lyricstyt:after {
+    content: '';
+    display: block;
+    width: min(90%, 680px);
+    height: 280px;
+    position: absolute;
+    left: 50%;
+    top: 24px;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+    background-image: linear-gradient( 90deg, rgba(29, 22, 22, 0), rgba(29, 22, 22, 0.8) 50%, rgba(29, 22, 22, 0) 100% ), 
+        linear-gradient(#aaaaaa 14px, transparent 0), 
+        linear-gradient(#aaaaaa 14px, transparent 0), 
+        linear-gradient(#aaaaaa 14px, transparent 0), 
+        linear-gradient(#aaaaaa 14px, transparent 0), 
+        linear-gradient(#aaaaaa 14px, transparent 0), 
+        linear-gradient(#aaaaaa 14px, transparent 0), 
+        linear-gradient(#aaaaaa 14px, transparent 0), 
+        linear-gradient(#aaaaaa 14px, transparent 0), 
+      linear-gradient(#1d1616 100%, transparent 0);
+    background-size: 264px 100%, 100% 14px, 92% 14px, 97% 14px, 94% 14px, 96% 14px, 90% 14px, 93% 14px, 88% 14px, 100% 100%;
+    background-position: 0 0, 0 20px, 0 52px, 0 84px, 0 116px, 0 148px, 0 180px, 0 212px, 0 244px, 0 0;
+    animation: lyrics-skeleton-animation 2000ms infinite;
+    pointer-events: none;
+  }
+  
+  @keyframes lyrics-skeleton-animation {
+    to {
+      background-position: 100% 0, 0 20px, 0 52px, 0 84px, 0 116px, 0 148px, 0 180px, 0 212px, 0 244px, 0 0;
+    }
+  }
+
+.lyricstyt.loaded:after {
+    display: none;
+    animation: none;
+}
   
