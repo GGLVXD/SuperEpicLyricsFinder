@@ -68,6 +68,7 @@ justify-self: center;
 
 .song-text {
     font-size: 16px;
+    
 }
 .song-text-container {
     width: 70%;
@@ -80,4 +81,20 @@ justify-self: center;
 .lyrics-url-container{
     border: 1px solid black;
     font-size: 30px;
+}
+.Tutorial{
+    background-color: #1D1616;
+}
+.tutorial-txt{
+    font-family: 'Times New Roman', serif;
+color: black;
+width: 100%;
+    background-color: aliceblue;
+  border: 1px solid black;
+  margin-top: 10px;
+  padding-top: 10px;
+  font-size:25px;
+  text-align: center;
+  width: 500px;
+justify-self: center;
 }

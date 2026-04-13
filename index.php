@@ -39,31 +39,22 @@ include 'php/fetch.php';
                 </button>
         </div>
     </div>
-        <div class="category" " id="category-container">
-           <div class="song-container">
-                <div class="song-title-container">
-                    <a target="_blank" href="https://www.lyrics.com/lyrics/kkk">KKK Lyrics <i class="fas fa-external-link-alt"></i></a>
-                </div>
-                <div class="line">
-                    <div class="song-text-container">
-                        <p class="song-text">A list of lyrics, artists and songs that contain the term "kkk" - from the Lyrics.com
-                        website ... The KKK Took My Baby Away · Ramones · Ramones Mania · 1988. But ...</p>
-                        <audio controls>
-                            <source src="https://www.w3schools.com/html/tryit.asp?filename=tryhtml5_audio_all" type="audio/mpeg">
-</audio>
-                    </div>
-                    <div class="image-container">
-                        <img class="song-image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmDH5xDbteImo7QQTXxhHDQmgRpkY1umPYRfDTYKyE2-tpTp0A-Czd7A&s" width="100" height="100">
-                    </div>
-                </div>
-            </div>
-
-
+        <div class="category" style="display: none" id="category-container">
+        <!-- lyrics suggestions (auto replaced by js) -->
         </div>
 
-        <div class="lyrics-text">
-            <p class="lyrics-text"><?php echo $lyrics["message"]["lyrics"]; ?></p>
-    </div>
+<div class="Tutorial">
+    <div class="tutorial-txt">
+<p>Do you have a song stuck in your head? Maybe you only remember a part of the lyrics, like, “I’m looking for a song that goes like this.” This tool finds songs that contain the lyrics you remember!
+
+The “Find Song by Lyrics” (or partial lyrics)  tool can help you figure it out and solve your earworm. It’s simple—no artist name required. Just type the few lyrics you know, and once you’re finished entering them, our tool will help identify potential song matches. Don’t worry, you don’t need perfect lyrics to use this tool.
+
+Our tool uses Google search to show you the most likely options based on the lyrics. You can then select the best match and explore information about the song and artist. It will also provide the option to play the song via YouTube and/or Spotify. You can also click the song title link to go to the lyrics page.
+
+You can also use this tool as a lyrics search engine to find lyrics for any song you want. Just type any artist, song, or lyric phrase.</p>
+</div>
+</div>
+
     </div>
     <!-- Footer container -->
     <div class="footer">

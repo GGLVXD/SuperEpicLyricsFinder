@@ -1,6 +1,11 @@
+
+let cache =0;
+
+
 async function suggestInput(){
 
 let query = document.getElementById("suggestInput").value;
+let input = document.getElementById("suggestInput");
 
 
 if(query==""){
@@ -34,19 +39,66 @@ let query = document.getElementById("suggestInput").value;
 }
 
 function sendData(data){
-    let container = document.getElementById("category-container");
-    console.log(data);
-    container.innerHTML = 
-    `
-    <div class="song-container">
-        <div class="song-title-container">
-            <a target="_blank" href="https://selm.gglvxd.net/lyrics/${data["data"][0]["artist"]["name"]}/${data["data"][0]["title"]}">${data["data"][0]["title"]} <i class="fas fa-external-link-alt"></i></a>
-        </div>
-        <div class="line">
-            <div class="image-container">
-                <img class="song-image" src="${data["data"][0]["album"]["cover"]}" width="100" height="100">
-            </div>
-        </div>
-    </div>
-    `
+  let query = document.getElementById("suggestInput").value;
+    if(cache == 0){ // no cache
+      createElements(data);
+      console.log(data);
+    } else {
+      nukeData()
+      console.log(query)
+      getData()
+      createElements();
+    }
 }
+
+function createElements(data) {
+    let container = document.getElementById("category-container");
+    for(let i = 0;i<=data.data.length;i++){
+      let newdiv = document.createElement("div");
+      cache = cache+1;
+      // give id to element
+      newdiv.setAttribute('id', i);
+      newdiv.innerHTML =
+      `
+            <div class="song-container">
+                  <div class="song-title-container">
+                      <a target="_blank" href="https://echoflow.gglvxd.net/lyrics/${data["data"][i]["artist"]["name"]}/${data["data"][i]["title"]}">${data["data"][i]["title"]}<i class="fas fa-external-link-alt"></i></a>
+                  </div>
+                  <div class="line">
+                      <div class="song-author-container">
+                          <p class="song-author">
+                              <a href="${data["data"][i]["artist"]["link"]}">${data["data"][i]["artist"]["name"]}</a>
+                          </p>
+                          <div class="audio-control">
+                              <audio controls>
+                                  <source src="${data["data"][i]["preview"]}" type="audio/mpeg">
+                              </audio>
+                          </div>
+                      </div>
+                      <div class="image-container">
+                          <img class="song-image" src="${data["data"][i]["album"]["cover"]}" width="100" height="100">
+                      </div>
+                  </div>
+              </div>
+      `
+      container.appendChild(newdiv);
+}}
+
+function nukeData(){
+  for(let i=0;i<=cache;i++){
+    let getelement = document.getElementById(i);
+    getelement.remove();
+    console.log("nuked "+i);
+  }
+  cache=0;
+}
+
+input.addEventListener("keypress", function(event) {
+  // If the user presses the "Enter" key on the keyboard
+  if (event.key === "Enter") {
+    // Cancel the default action, if needed
+    event.preventDefault();
+    // Trigger the button element with a click
+    getData();
+  }
+});
