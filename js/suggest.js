@@ -46,8 +46,7 @@ function sendData(data){
     } else {
       nukeData()
       console.log(query)
-      getData()
-      createElements();
+      createElements(data);
     }
 }
 
@@ -80,7 +79,7 @@ function createElements(data) {
 }}
 
 function nukeData(){
-  for(let i=0;i<=cache;i++){
+  for(let i=0;i<cache;i++){
     let getelement = document.getElementById(i);
     getelement.remove();
     console.log("nuked "+i);
