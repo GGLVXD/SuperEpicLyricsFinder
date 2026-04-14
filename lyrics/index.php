@@ -35,7 +35,7 @@ $id = $segments[1] ?? '';
             <h1 id="title" style="display:none">Ella Langley Lyrics "Dandelion"</h1>
         </div>
 <div class="Video">
-   <iframe width="560" height="315" src="https://www.youtube.com/embed/sf6eRmInk1s?si=fhtQ9mBXLZzLMKCl" 
+   <iframe width="560" height="315"  
     title="YouTube video player" 
     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -44,7 +44,10 @@ $id = $segments[1] ?? '';
 <div class="lyricstyt">
     <p id="lyrics"></p>
 </div>
-
+    <!-- Footer container -->
+<div class="footer">
+    <p>© 2026 <br> EchoFlow</p>
+</div>
 
 </body>
 <script src="/js/lyrics.js"></script>

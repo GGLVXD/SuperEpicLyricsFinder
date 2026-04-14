@@ -60,7 +60,7 @@ You can also use this tool as a lyrics search engine to find lyrics for any song
     <!-- Footer container -->
     <div class="footer">
         <p>© 2026 <br> EchoFlow</p>
-</div>
+    </div>
     <script src="js/suggest.js"></script>
 </body>
 </html>

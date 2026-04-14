@@ -4,7 +4,6 @@
     background-color:#1D1616;
     height: 100px;
     display: flex;
-    border-bottom: 3px solid white;
     
 }
 .title-container{
@@ -25,7 +24,7 @@
     height: 5%;
     bottom:0px;
     width: 100%;
-    margin-top: 3px;
+    margin-top: auto;
     padding-top: 3px;
 }
 

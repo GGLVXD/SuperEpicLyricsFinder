@@ -120,7 +120,7 @@
   font-size: 20px;
   text-align: center;
   width: 750px;
-  justify-self: center;
+  margin: 0 auto;
   color: white;
   position: relative;
   min-height: 340px;
@@ -149,8 +149,9 @@
   line-height: 1.25;
 }
 .Video{
-  text-align: left;
-  justify-self: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
 }
 
   .Artist:after {
