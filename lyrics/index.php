@@ -28,21 +28,21 @@ $id = $segments[1] ?? '';
             <h1 class="title-text">EchoFlow</h1>
         </div>
         <div class="pfp">
-        <img src="/assets/avatar.png" alt="avatar" height="50" width="75">
-     </div>
+            <img src="/assets/avatar.png" alt="avatar" height="50" width="75">
+        </div>
     </div>
         <div class="Artist">
             <h1 id="title" style="display:none">Ella Langley Lyrics "Dandelion"</h1>
-    </div>
+        </div>
 <div class="Video">
    <iframe width="560" height="315" src="https://www.youtube.com/embed/sf6eRmInk1s?si=fhtQ9mBXLZzLMKCl" 
     title="YouTube video player" 
     frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</iframe>
+    </iframe>
 </div>
 <div class="lyricstyt">
-<p id="lyrics"></p>
+    <p id="lyrics"></p>
 </div>
 
 

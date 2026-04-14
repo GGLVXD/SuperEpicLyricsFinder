@@ -1,53 +1,53 @@
 
 
 .content{
-    background-color:#1D1616;
-    height:750px;
-    height: fit-content;
-    border-top: auto    ;
+  background-color:#1D1616;
+  height:750px;
+  height: fit-content;
+  border-top: auto;
 }
-.search-bar { /*search bar*/
-    display: flex;
-    max-width: 500px;
-    margin: auto auto;
-    align-content: center;
-    margin-top: 10px;
+.search-bar { 
+  display: flex;
+  max-width: 500px;
+  margin: auto auto;
+  align-content: center;
+  margin-top: 10px;
 
 }
 
 .search-bar .input-group {
-    border-radius: 30px;
-    overflow: hidden;
-    box-shadow: 0 2px 6px rgba(255, 255, 255, 0.747);
+  border-radius: 30px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.747);
 }
 
 .search-bar .form-control {
-    border: none;
-    padding-left: 20px;
+  border: none;
+  padding-left: 20px;
 }
 
 .search-bar .btn {
-    border: none;
-    padding: 10px 20px;
+  border: none;
+  padding: 10px 20px;
 }
 .lyrics-text{
-color: white;
-display: flex;
-align-content: center;
-max-width: 500px;
-margin: auto auto;
-margin-top: 20px;
-background-color: #1D1616;
-height: fit-content;
+  color: white;
+  display: flex;
+  align-content: center;
+  max-width: 500px;
+  margin: auto auto;
+  margin-top: 20px;
+  background-color: #1D1616;
+  height: fit-content;
 }
 .category{
-    display: grid;
+  display: grid;
   grid-template-columns: auto;
   background-color: #1D1616;
   padding: 10px;
 }
 .song-container{
-    background-color: aliceblue;
+  background-color: aliceblue;
   border: 1px solid black;
   padding: 12px 16px;
   font-size: 30px;
@@ -71,8 +71,7 @@ height: fit-content;
 
 
 .song-text {
-    font-size: 16px;
-    
+  font-size: 16px;
 }
 .song-text-container {
   flex: 1;
@@ -91,38 +90,38 @@ height: fit-content;
 }
 
 .line {
-    display: flex;
+  display: flex;
 }
 
 .lyrics-url-container{
-    border: 1px solid black;
-    font-size: 30px;
+  border: 1px solid black;
+  font-size: 30px;
 }
 .Tutorial{
-    background-color: #1D1616;
+  background-color: #1D1616;
 }
 .tutorial-txt{
-    font-family: 'Times New Roman', serif;
-color: black;
-width: 100%;
-    background-color: aliceblue;
+  font-family: 'Times New Roman', serif;
+  color: black;
+  width: 100%;
+  background-color: aliceblue;
   border: 1px solid black;
   margin-top: 10px;
   padding-top: 10px;
   font-size:25px;
   text-align: center;
   width: 500px;
-justify-self: center;
+  justify-self: center;
 }
 .lyricstyt{
- width: 100%;
+  width: 100%;
   border: 1px solid rgb(255, 255, 255);
   padding: 20px;
   font-size: 20px;
   text-align: center;
   width: 750px;
-justify-self: center;
-color: white;
+  justify-self: center;
+  color: white;
   position: relative;
   min-height: 340px;
 
@@ -136,38 +135,38 @@ color: white;
 
 }
 .Artist{
-    text-align: center;
-    color: white;
-    position: relative;
-    height: 320px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .Artist #title {
-    margin: 0;
-    line-height: 1.25;
+  margin: 0;
+  line-height: 1.25;
 }
 .Video{
-    text-align: left;
-    justify-self: center;
+  text-align: left;
+  justify-self: center;
 }
 
   .Artist:after {
-    content: '';
-    display: block;
-    width: min(90%, 740px);
-    height: 2.4rem;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 8px;
-    background: linear-gradient(90deg, #2e2e2e 20%, #5b5b5b 50%, #2e2e2e 80%);
-    background-size: 200% 100%;
-    animation: skeleton-animation 2000ms infinite;
-    pointer-events: none;
+  content: '';
+  display: block;
+  width: min(90%, 740px);
+  height: 2.4rem;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 8px;
+  background: linear-gradient(90deg, #2e2e2e 20%, #5b5b5b 50%, #2e2e2e 80%);
+  background-size: 200% 100%;
+  animation: skeleton-animation 2000ms infinite;
+  pointer-events: none;
   }
   
   @keyframes skeleton-animation {
@@ -177,8 +176,8 @@ color: white;
   }
   
 .Artist.loaded:after {
-        display: none;
-        animation: none;
+  display: none;
+  animation: none;
 }
   
   
