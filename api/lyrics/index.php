@@ -7,6 +7,8 @@ $title = $_GET['title'];
 
 header("Content-Type: application/json");
 
+
+
 $artist = rawurlencode($artist);
 $title = rawurlencode($title);
 $url = "https://api.lyrics.ovh/v1/{$artist}/{$title}";
