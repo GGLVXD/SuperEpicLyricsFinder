@@ -62,4 +62,11 @@ You can also use this tool as a lyrics search engine to find lyrics for any song
     </div>
     <script src="js/suggest.js"></script>
 </body>
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://analytics.gglvxd.net/js/pa-NM0aw3yPMC-_9Ty6-0X7C.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
+</script>
+
 </html>

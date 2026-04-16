@@ -7,7 +7,15 @@ async function getLyrics(artist, title) {
     }
 
     const result = await response.json();
-    let parsedResult = {"lyrics": result.lyrics.replace(/\r?\n/g, "<br>")};
+    let lyricsText = "No lyrics found";
+
+    if (typeof result?.error === "string" && result.error.toLowerCase() === "no lyrics found") {
+      lyricsText = "No lyrics found on lyrics.ovh";
+    } else if (typeof result?.lyrics === "string") {
+      lyricsText = result.lyrics.replace(/\r?\n/g, "<br>");
+    }
+
+    const parsedResult = { lyrics: lyricsText };
     console.log(parsedResult);
 
     setLyrics(parsedResult);

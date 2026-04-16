@@ -57,13 +57,16 @@ $id = $segments[1] ?? '';
 </body>
 <script src="/js/lyrics.js"></script>
 <script>
-    //getLyrics();
-</script>
-<script>
     const id = <?php echo json_encode($id); ?>;
 </script>
 <script src="/js/song.js"></script>
 <script>
     getMusicInfo();
+</script>
+<!-- Privacy-friendly analytics by Plausible -->
+<script async src="https://analytics.gglvxd.net/js/pa-NM0aw3yPMC-_9Ty6-0X7C.js"></script>
+<script>
+  window.plausible=window.plausible||function(){(plausible.q=plausible.q||[]).push(arguments)},plausible.init=plausible.init||function(i){plausible.o=i||{}};
+  plausible.init()
 </script>
 </html>
