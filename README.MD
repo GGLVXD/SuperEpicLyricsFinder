@@ -20,3 +20,8 @@ location /lyrics/ {
 
 ## .env configuration
 get your genius api from genius docs at https://docs.genius.com/
+
+
+## Maintainer's
+[GGLVXD](https://github.com/GGLVXD)
+[Estazix](https://github.com/Estazix)
