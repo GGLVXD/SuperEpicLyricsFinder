@@ -112,10 +112,12 @@
   border: 1px solid black;
   font-size: 30px;
 }
+/* tutorial container */
 .Tutorial{
   background-color: #1D1616;
   padding: 28px 16px 12px;
 }
+/* Homepage description container */
 .tutorial-txt{
   font-family: 'Segoe UI', Arial, sans-serif;
   color: #e8e8e8;
@@ -126,10 +128,11 @@
   line-height: 1.7;
   text-align: left;
 }
-
+/* Homepage description text */
 .tutorial-txt p{
   margin: 0;
 }
+/* lyrics container */
 .lyricstyt{
   border: 1px solid rgb(255, 255, 255);
   padding: 20px;
