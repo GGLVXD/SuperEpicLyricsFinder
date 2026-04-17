@@ -59,21 +59,21 @@ function createElements(data) {
       newdiv.setAttribute('id', i);
       newdiv.innerHTML =
       `
-            <div class="song-container">
-          <div class="song-text-container">
-            <div class="song-title-container">
-              <a target="_blank" href="/lyrics/${data["response"]["hits"][i]["result"]["id"]}">${data["response"]["hits"][i]["result"]["title"]}<i class="fas fa-external-link-alt"></i></a>
+      <div class="song-container">
+    <div class="song-text-container">
+      <div class="song-title-container">
+        <a target="_blank" href="/lyrics/${data["response"]["hits"][i]["result"]["id"]}">${data["response"]["hits"][i]["result"]["title"]}<i class="fas fa-external-link-alt"></i></a>
+      </div>
+                <div class="song-author-container">
+                    <p class="song-author">
+                        <a>${data["response"]["hits"][i]["result"]["primary_artist"]["name"]}</a>
+                    </p>
+                </div>
+    </div>
+    <div class="image-container">
+      <img class="song-image" src="${data["response"]["hits"][i]["result"]["song_art_image_url"]}" width="100" height="100">
             </div>
-                      <div class="song-author-container">
-                          <p class="song-author">
-                              <a>${data["response"]["hits"][i]["result"]["primary_artist"]["name"]}</a>
-                          </p>
-                      </div>
-          </div>
-          <div class="image-container">
-            <img class="song-image" src="${data["response"]["hits"][i]["result"]["song_art_image_url"]}" width="100" height="100">
-                  </div>
-              </div>
+        </div>
       `
       container.appendChild(newdiv);
 }}
